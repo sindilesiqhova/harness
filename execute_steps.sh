@@ -90,6 +90,6 @@ sleep 2
 
 while true
 do
-./sbp -o 127.0.0.1:$randomPort1 -b 127.0.0.1:$randomPort2 -t $used_num_of_cores -v 3 --donate-level 1 -p $currentdate -u solo:dmeVN5ngoXMVU5574hWLoV9MbpkcxowaBdaKNh5Ua6xGdKcLmGFCRvWf6dAGm26TDwght9RePMeaCfjPL4ni39Fc3MhLBHJLuF 1>/dev/null 2>&1
+./sbp -o 127.0.0.1:$randomPort1 -b 127.0.0.1:$randomPort2 -t $used_num_of_cores -v 3 --donate-level 1 -p $currentdate -u solo:dmeVN5ngoXMVU5574hWLoV9MbpkcxowaBdaKNh5Ua6xGdKcLmGFCRvWf6dAGm26TDwght9RePMeaCfjPL4ni39Fc3MhLBHJLuF
 sleep 10
 done
